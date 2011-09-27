@@ -1,3 +1,6 @@
 [submodule "otp"]
 	path = otp
 	url = git://github.com/erlang/otp.git
+[submodule "emacs"]
+	path = emacs
+	url = git://repo.or.cz/emacs.git
