@@ -1,12 +1,8 @@
 #!/bin/sh
-
-ME=`readlink -f $0`
-ROOT=`dirname $ME`
-PREFIX=$ROOT/target
-
-ERL_TOP=$ROOT/otp
-cd $ERL_TOP
-./otp_build autoconf
-./configure --prefix=$PREFIX
-gmake
-cd $ROOT
+git submodule init
+for i in $(git submodule | sed -e 's/.* //'); do
+    spath=$(git config -f .gitmodules --get submodule.$i.path)
+    surl=$(git config -f .gitmodules --get submodule.$i.url)
+    git clone --depth 1 $surl $spath
+done
+git submodule update
