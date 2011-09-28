@@ -24,4 +24,5 @@ emacs:
 
 dotfiles:
 	cp dotfiles/.emacs ~
+	cp dotfiles/.gitconfig ~
 	sed -i 's|PORTENV|$(ROOT)|g' ~/.emacs

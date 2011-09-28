@@ -1,0 +1,8 @@
+[user]
+	name = Alexander Wingård
+        email = alexander.wingard@ericsson.com
+[core]
+        pager = less -FXRS
+
+[color]
+        ui = always
