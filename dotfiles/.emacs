@@ -5,12 +5,16 @@
 
 (prefer-coding-system 'utf-8-unix)
 
+(setq inhibit-startup-screen t)
+(setq initial-scratch-message "")
+
 (global-set-key "\M-g" 'goto-line)
 (global-set-key "\C-x\C-b" 'bs-show)
 (global-set-key "\M-l" 'list-matching-lines)
 
 (global-font-lock-mode 1)
 (setq font-lock-maximum-decoration t)
+(setq-default show-trailing-whitespace t)
 
 (set-background-color "black")
 (set-foreground-color "white")
@@ -29,3 +33,5 @@
 (set-face-foreground 'minibuffer-prompt "red")
 
 (set-face-background 'region "slateblue4")
+(set-face-background 'trailing-whitespace "color-236")
+
