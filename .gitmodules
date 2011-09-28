@@ -1,6 +1,8 @@
 [submodule "otp"]
 	path = otp
 	url = git://github.com/erlang/otp.git
+	ignore = all
 [submodule "emacs"]
 	path = emacs
 	url = git://repo.or.cz/emacs.git
+	ignore = all
