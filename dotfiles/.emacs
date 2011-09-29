@@ -21,6 +21,7 @@
 (set-cursor-color "white")
 
 (set-face-foreground 'font-lock-comment-face "green yellow")
+(set-face-foreground 'font-lock-doc-face "green yellow")
 (set-face-foreground 'font-lock-constant-face "light slate blue")
 (set-face-foreground 'font-lock-function-name-face "cyan")
 (set-face-foreground 'font-lock-string-face "yellow")
