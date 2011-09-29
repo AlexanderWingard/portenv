@@ -6,3 +6,7 @@
 	path = emacs
 	url = git://repo.or.cz/emacs.git
 	ignore = all
+[submodule "org-mode"]
+	path = org-mode
+	url = git://orgmode.org/org-mode.git
+	ignore = all
