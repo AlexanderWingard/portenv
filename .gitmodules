@@ -10,3 +10,6 @@
 	path = org-mode
 	url = git://orgmode.org/org-mode.git
 	ignore = all
+[submodule "magit"]
+	path = magit
+	url = git://github.com/magit/magit.git

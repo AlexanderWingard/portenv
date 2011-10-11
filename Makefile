@@ -4,7 +4,7 @@ PREFIX := $(ROOT)/target
 ERL_TOP=$(ROOT)/otp
 export ERL_TOP
 
-.PHONY: otp emacs dotfiles git org-mode
+.PHONY: otp emacs dotfiles git org-mode magit
 
 git:
 	wget "http://git-core.googlecode.com/files/git-1.7.6.4.tar.gz"
@@ -25,6 +25,11 @@ emacs:
 org-mode:
 	sed -i 's|\/usr\/local|$(ROOT)\/target|g' org-mode/Makefile
 	cd org-mode && make info install
+
+magit:
+	sed -i 's|\/usr\/local|$(ROOT)\/target|g' magit/Makefile
+	cd magit && make DESTDIR="" install
+
 
 dotfiles:
 	cp dotfiles/.emacs ~

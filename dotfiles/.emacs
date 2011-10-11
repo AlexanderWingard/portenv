@@ -1,6 +1,7 @@
 (add-to-list 'load-path "PORTENV/otp/lib/tools/emacs")
 
 (require 'erlang-start)
+(require 'magit)
 (setq-default erlang-root-dir "PORTENV/target/lib/erlang")
 
 (prefer-coding-system 'utf-8-unix)
