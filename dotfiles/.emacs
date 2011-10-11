@@ -13,6 +13,7 @@
 (global-set-key "\M-g" 'goto-line)
 (global-set-key "\C-x\C-b" 'bs-show)
 (global-set-key "\M-l" 'list-matching-lines)
+(global-set-key "\C-c\C-g" 'magit-status)
 
 (global-font-lock-mode 1)
 (setq font-lock-maximum-decoration t)
@@ -36,5 +37,10 @@
 (set-face-foreground 'minibuffer-prompt "red")
 
 (set-face-background 'region "slateblue4")
+(set-face-background 'highlight "color-238")
+
 (set-face-background 'trailing-whitespace "color-236")
+
+(set-face-foreground 'diff-added "color-82")
+(set-face-foreground 'diff-removed "color-197")
 
