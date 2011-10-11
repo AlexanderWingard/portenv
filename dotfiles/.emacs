@@ -4,6 +4,7 @@
 (setq-default erlang-root-dir "PORTENV/target/lib/erlang")
 
 (prefer-coding-system 'utf-8-unix)
+(setq-default indent-tabs-mode nil)
 
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message "")
